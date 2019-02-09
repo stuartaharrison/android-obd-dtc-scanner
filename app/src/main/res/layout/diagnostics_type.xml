@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#8c8c8c" >
+
+    <!-- This defines the number of Rows -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#8c8c8c"> <!--No of Rows defined -->
+
+        <!-- First Row, defined with 3 columns -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- All Codes Button Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnAllCodes"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/codesall"
+                    android:contentDescription="@string/DICodesAll"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/DICodesAll"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- All Codes Button Image END -->
+            <!-- Engine and Powertrain Button Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnEngine"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/codesengine"
+                    android:contentDescription="@string/DICodesEngine"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/DICodesEngine"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- Engine and Powertrain Button Image END -->
+            <!-- Body Button Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/codesbody"
+                    android:contentDescription="@string/DICodesBody"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/DICodesBody"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- Body Button Image END -->
+        </LinearLayout>
+
+        <!-- Second Row, defined with 3 columns -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Chassis Button Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnChassis"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/codeschassis"
+                    android:contentDescription="@string/DICodesChassis"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/DICodesChassis"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- Chassis Button Image END -->
+            <!-- Network Button Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnNetwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/codesnetwork"
+                    android:contentDescription="@string/DICodesNetwork"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/DICodesNetwork"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- Network Button Image END -->
+
+            <!-- Quick Reset Button Image -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnQuickReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/codesresetl"
+                    android:contentDescription="@string/DICodesNetwork"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/DICodesQuick"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <!-- Quick Reset Image END -->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

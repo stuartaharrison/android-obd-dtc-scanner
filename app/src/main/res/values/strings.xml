@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Harrison DTC Scanner</string>
+
+    <!--<string name="hello_world">Hello world!</string>-->
+    <string name="action_settings">Settings</string>
+
+    <!-- Agreement Dialog Strings -->
+    <string name="ADiaMessage">Any codes that this application identifies must be taken as an advisory only. You should always consult a mechanical garage about faults with your vehicle before taking any action. This application is to be used as a guide only. You must therefore agree to this in order to use this feature.</string>
+    <string name="ADiaAgree">Agree</string>
+    <string name="ADiaDisagree">Disagree</string>
+
+    <!-- Dialog Strings -->
+    <string name="DiaDismiss">Dismiss</string>
+    <string name="AboutMessage">Harrison OBD Scanner \n Author: Stuart Harrison - S0907581 \n\nThis application is to be used with Bluetooth and a adapter to connect to your cars ECU in order to get live data from a running vehicle, or to get any fault codes the ECU has stored. This app was created as coursework for the mobile and ubiquitous computing modue at the Glasgow Caledonian University.</string>
+    <string name="NoBluetoothMessage">The device you are using either does not support Bluetooth, or you have bluetooth turned off.</string>
+    <string name="NoInternetMessage">The device is not currently connected to the internet.</string>
+    <string name="NoGPSMessage">The device you are using either does not support GPS, or you have your location services disabled. Please turn this feature on to use this function.</string>
+
+    <!-- Main Menu Activity Strings -->
+    <string name="MADiagnostics">Diagnostics</string>
+    <string name="MALiveData">Live Data</string>
+    <string name="MAStored">Search History</string>
+    <string name="MAMap">Nearby Mechanics</string>
+    <string name="MASettings">Settings</string>
+    <string name="MAUpdates">Updates</string>
+
+    <!-- Diagnostics Avtivity Strings -->
+    <string name="DICodesAll">Scan All</string>
+    <string name="DICodesEngine">Engine and Powetrain</string>
+    <string name="DICodesBody">Body</string>
+    <string name="DICodesChassis">Chassis</string>
+    <string name="DICodesNetwork">Network and Electronics</string>
+    <string name="DICodesQuick">Quick Reset All</string>
+
+    <!-- Live Data Activity Strings -->
+    <string name="LDStartLive">Start Live Data</string>
+    <string name="LDEraseCodes">Erase Current DTCs</string>
+
+    <!-- Updates Activity Strings -->
+    <string name="UADTCUpdate">Update DTC Database to version</string>
+    <string name="UAMAPUpdate">Update Maps Database to version</string>
+    <string name="UANoUpdates">No Updates available at this time</string>
+    <string name="UAUpdateButton">Update</string>
+    <string name="UAUpdateProgrss">Update in Progress..</string>
+
+</resources>

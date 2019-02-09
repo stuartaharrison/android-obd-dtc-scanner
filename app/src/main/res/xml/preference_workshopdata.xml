@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Users Information" >
+
+        <EditTextPreference
+            android:title="Name"
+            android:summary="Enter the app owners name"
+            android:key="name"
+            android:defaultValue="Default"/>
+        <EditTextPreference
+            android:title="Workshop Name"
+            android:summary="Enter the name of the workshop the app is registered too"
+            android:key="workshop"
+            android:defaultValue="Default"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Bluetooth" >
+
+        <CheckBoxPreference
+            android:title="Bluetooth Enabled"
+            android:summary="Enable or Disable Androids Bluetooth Adapter"
+            android:key="btEnabled"
+            android:defaultValue="false" />
+        <ListPreference
+            android:title="Paired Device"
+            android:summary="The ID of the paired bluetooth device for the scan tool"
+            android:key="btDevice"
+            android:dialogTitle="Select Paired Device" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Data">
+
+        <EditTextPreference
+            android:title="Database Name"
+            android:summary="The name of the database to access"
+            android:key="dbName"
+            android:defaultValue="obd.s3db"
+            android:clickable="false"
+            android:editable="false"
+            android:visibility="invisible" />
+        <EditTextPreference
+            android:title="Database DTC Version"
+            android:summary="The version of the current DTC database table"
+            android:key="dtcVersion"
+            android:defaultValue="1"
+            android:clickable="false"
+            android:editable="false"
+            android:visibility="invisible" />
+        <EditTextPreference
+            android:title="Database Garages Version"
+            android:summary="The version of the current garages location database table"
+            android:key="garVersion"
+            android:defaultValue="1"
+            android:clickable="false"
+            android:editable="false"
+            android:visibility="invisible" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Debugging Options" >
+
+        <CheckBoxPreference
+            android:title="Send Errors to Developer"
+            android:summary="Enable or Disable sending error logs to the app developer"
+            android:key="debugSend"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Additional Settings" >
+
+        <CheckBoxPreference
+            android:title="Enable Sound"
+            android:summary="Enable or Disable Applications Sound"
+            android:key="sound"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:title="Application Usage Agreement"
+            android:summary="You agree to the terms of this application"
+            android:key="agreement"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
